@@ -13,14 +13,7 @@ namespace DataAccess.Concrete.EntityFramework
     public class EfCarDal : ICarDal
     {
         public void Add(Car entity)
-        {   
-            if(entity.Description.Length<2) {
-                Console.WriteLine("Araba modeli 2 harften fazla olmalı");
-            }
-            if(entity.DailyPrice < 0)
-            {
-                Console.WriteLine("Araba günlük kiralama fiyatı 0'dan fazla olmalı");
-            }
+        {       
             using (MyDatabaseContext context = new MyDatabaseContext())
             {
                 var AddedEntity = context.Entry(entity);
