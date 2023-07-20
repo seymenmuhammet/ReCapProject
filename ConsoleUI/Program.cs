@@ -14,7 +14,7 @@ namespace ConsoleUI
 
             Car newCar = new Car { Id = 6, BrandId = 6, ColorId = 7, DailyPrice = 600, Description = "6.araba GÜNCELLENDİ", ModelYear = 2026 };
             
-            Console.WriteLine("Default car list: ------------------");
+            Console.WriteLine("Default car list: -------------------");
             carManager.PrintTheList();
 
             Console.WriteLine("Adding new cars: -------------------");
